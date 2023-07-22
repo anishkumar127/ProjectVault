@@ -1,0 +1,41 @@
+footer {
+  width: 100vw;
+  background-color: black;
+  padding: 35px;
+  font-size: small;
+}
+.footer-flex-session {
+  display: flex;
+  color: whitesmoke;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-logo {
+  height: 19px;
+  width: 63px;
+}
+.footer-session-image {
+  height: 34px;
+  max-width: 103px;
+}
+.footer-session-heading {
+  display: block;
+  font-weight: 400;
+  color: aliceblue;
+  padding: 10px 0px;
+  font-size: 13px;
+  word-wrap: wrap;
+}
+.decription > span {
+  display: block;
+}
+.footer-flex-session:not(.footer-session-heading) {
+  font-size: 13px;
+}
+.footer-flex-session > li {
+  padding: 10px;
+}
+.overflowtext-footerSection {
+  max-width: 300px;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- create and header footer -->
+      <div class="border-radius">
+        <div class="header-footer-section">
+          <h3>Create Account</h3>
+        </div>
+
+        <!-- main-form container -->
+        <div class="form-section">
+          <form>
+            <!-- 1 -->
+            <div class="two-columns width-full">
+              <div>
+                <label class="text-color" for="fname"> First name*</label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  class="input-box-decoration"
+                  placeholder="enter your first name"
+                />
+              </div>
+
+              <div>
+                <label class="text-color" for="lname"> Last name*</label>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  class="input-box-decoration"
+                  placeholder="enter your last name"
+                />
+              </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="one-columns">
+              <label class="text-color" for="email"> Email*</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-box-decoration"
+                placeholder="enter your email"
+              />
+            </div>
+
+            <!-- 3 -->
+
+            <div class="two-columns width-full">
+              <div>
+                <label class="text-color" for="password">Password*</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="input-box-decoration"
+                  placeholder="your password"
+                />
+              </div>
+              <div>
+                <label class="text-color" for="cpassword">
+                  Confirm Password*</label
+                >
+                <input
+                  type="password"
+                  name="cpassword"
+                  id="cpassword"
+                  class="input-box-decoration"
+                  placeholder="confirm password"
+                />
+              </div>
+            </div>
+
+            <!-- 4 -->
+
+            <div class="two-columns">
+              <div>
+                <label class="text-color text-display-block">Gender:</label>
+                <input type="radio" name="male" id="male" />
+                <label for="male" class="text-color">Male</label>
+
+                <input type="radio" name="male" id="female" />
+                <label for="female" class="text-color">Female</label>
+              </div>
+
+              <div>
+                <label class="text-color text-display-block">Hobbies</label>
+                <input type="checkbox" name="music" id="music" />
+                <label class="text-color" for="music">Music</label>
+
+                <input type="checkbox" name="sports" id="sports" />
+                <label class="text-color" for="sports">Sports</label>
+
+                <input type="checkbox" name="travel" id="travel" />
+
+                <label class="text-color" for="travel">Travel</label>
+
+                <input type="checkbox" name="movies" id="movies" />
+                <label class="text-color" for="movies">Movies</label>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="two-columns width-full">
+              <div>
+                <label class="text-color">Source of Income</label>
+                <select class="input-box-decoration">
+                  <option>Employed</option>
+                  <option value="">Business</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-color">Income</label>
+                <div class="range-align">
+                  <input type="range" class="range-input" min="0" max="100" />
+                  <div>
+                    <span class="range-color">20K</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+
+            <div class="two-columns width-full">
+              <div>
+                <label class="text-color">Upload Profile Picture</label>
+                <input type="file" class="outline-none input-box-decoration" />
+              </div>
+              <div>
+                <label class="text-color" for="age">Age</label>
+                <input
+                  type="number"
+                  class="input-box-decoration"
+                  value="18"
+                  id="age"
+                />
+              </div>
+            </div>
+
+            <!-- 7 -->
+
+            <div class="one-columns">
+              <label class="text-color" for="bio">Bio</label>
+              <textarea
+                rows="4"
+                class="input-box-decoration"
+                cols="50"
+                id="bio"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <!-- form end -->
+
+        <!-- header-footer & button  -->
+
+        <div class="header-footer-section">
+          <button type="submit" class="submitButton">Create</button>
+        </div>
+      </div>
+      <!-- main ending -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .hey {
+      background-color: green;
+    }
+  </style>
+  <body>
+    <ul id="testid" onclick="test()">
+      <li class="hide">a</li>
+      <li class="hide">b</li>
+      <li id="hh" class="hide hey">c</li>
+      <li>d</li>
+    </ul>
+    <button onclick="h()">click</button>
+    <script>
+      var res = document.querySelector(".hide");
+      res.style.backgroundColor = "red";
+
+      function h() {
+        element = document.getElementById("hh");
+        console.log(element);
+        console.log("test");
+        element.classList.remove("hey");
+      }
+
+      function test() {
+        var x = document.getElementById("testid");
+        console.log(x);
+        x.forEach((a, b) => console.log(a, b));
+      }
+    </script>
+  </body>
+</html>

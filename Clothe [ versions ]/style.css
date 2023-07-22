@@ -1,0 +1,301 @@
+/* universal css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* variables css */
+:root {
+  --blackColor: black;
+  --grayColor: red;
+  --whiteColor: white;
+
+  /* my root */
+  --gray: #757575;
+
+  /* image */
+  --image-font-size: 64px;
+  --image-font-weight: 400;
+
+  /* button */
+  --button-background-color: #000;
+  --sub-button-background-color: #f44336;
+  --contact-section-background: #f1f1f1;
+}
+
+/* common css */
+.side-bar-text-style {
+  font-weight: bold;
+  color: gray;
+}
+
+/* Sidebar Grid */
+.Grid-item-SideBar {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+  position: fixed;
+  overflow: auto;
+  height: 100vh;
+}
+/* logo Style*/
+.logo {
+  padding: 40px 0 40px 5px;
+}
+/* menubar style*/
+
+/* sidebar menuitems style */
+.sidebar-menu-items {
+  padding: 10px;
+  font-size: 20px;
+  padding-left: 5px;
+  font-weight: 700;
+}
+.sidebar-footer-menus {
+  font-size: 17px;
+  padding-top: 5px;
+  padding: 12px 0px 12px 0px;
+}
+.sidebar-menu-items:hover {
+  background-color: #757575;
+  color: black;
+}
+.sideBarFooter {
+  padding: 40px 0 0 0;
+}
+/* footer on Hover */
+.sidebar-footer-menus:hover {
+  background-color: #757575;
+  color: black;
+}
+
+/* dropdown menue */
+.hidden {
+  display: none;
+}
+.show {
+  display: inline;
+}
+.dropdown-subPart {
+  display: block;
+  padding-left: 20px;
+}
+.dropdown-subPart:hover {
+  background-color: #c0c0c0;
+}
+.Grid-item-main-website {
+  overflow: scroll;
+}
+
+/* MY CSS */
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.container {
+  max-width: 2000px;
+  width: 100%;
+  padding: 20px;
+}
+/* navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.nav-menu {
+  text-align: end;
+}
+
+/* image section */
+.image {
+  background: url("https://www.w3schools.com/w3images/jeans.jpg");
+  width: 100%;
+  max-width: 2000px;
+  height: 633px;
+}
+
+/* C O  M M O N  */
+.text-align-center {
+  text-align: center;
+}
+.nav-font-size {
+  font-size: 24px;
+}
+
+.button-padding {
+  padding: 12px 24px;
+}
+
+.image-text-padding {
+  padding: 24px 48px;
+}
+
+.text-color-white {
+  color: white;
+}
+.button-style {
+  background-color: var(--button-background-color);
+}
+.image-font-size {
+  font-size: var(--image-font-size);
+}
+
+.font-margin {
+  margin: 10px 0;
+}
+
+.font-weight {
+  font-weight: var(--image-font-weight);
+}
+.sub-font-size {
+  font-size: 36px;
+}
+
+.nav-font-margin {
+  margin: 24px 0px;
+  padding-right: 23px;
+  padding-right: 23px;
+}
+.nav-font-margin-right {
+  margin-right: 16px;
+}
+
+.text-color-gray {
+  color: var(--gray);
+}
+
+.count-text-margin {
+  margin: 16px 0px;
+}
+
+/* CART */
+
+.cart-padding {
+  padding: 0.01em 16px;
+}
+
+.cart-image-style {
+  width: 100%;
+  vertical-align: middle;
+  max-width: 310px;
+}
+/* not working */
+.bolder {
+  display: block;
+  font-weight: 900px !important;
+}
+
+.cart-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* subscribe */
+
+.sub-button {
+  background-color: var(--sub-button-background-color);
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border: none;
+  margin-top: 10px;
+}
+
+.sub-input-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  display: block;
+}
+.subscribe-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.width {
+  width: 100%;
+}
+/* Contact */
+.contact-section {
+  background-color: var(--contact-section-background);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.contact-input {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-padding {
+  padding: 20px;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+/* MERGE */
+
+.merge {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width:1024px) {
+  .image {
+    /* height: 522px; */
+    max-height: 499px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container {
+  padding: 20px;
+}
+}
+
+@media screen and (max-width:768px) {
+  .left-bar{
+    display: none;
+  }
+  .merge{
+    display: block;
+    /* padding: 20px; */
+    padding: 0px;
+  }
+  .image{
+    max-height: 485px;
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 426px) {
+  .cart-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image {
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  .merge {
+    width: 100%;
+    padding: 8px;
+  }
+  .hide{
+    display: none ;
+  }
+  .font-size-responsive{
+    font-size: 33px;
+  }
+  .contact-padding {
+    padding: 10px;
+}
+}
+
+

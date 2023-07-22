@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,300&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MainContainer -->
+    <div class="merge">
+      <div class="left-bar" id="hideMenu">
+        <div class="logo">
+          <h2 class="logo-latter-spacing">LOGO</h2>
+        </div>
+
+        <!-- Menu -->
+        <div class="">
+          <ul style="list-style: none">
+            <li class="sidebar-menu-items text-color-gray">Shirts</li>
+            <li class="sidebar-menu-items text-color-gray">Dresses</li>
+            <li class="sidebar-menu-items" onclick="showData()">
+              Jeanes<span class="downarraow-simble">▼</span>
+            </li>
+            <li style="list-style: none" id="onHide" class="hidden">
+              <span class="sidebar-menu-items dropdown-subPart">Skinny</span>
+              <span class="sidebar-menu-items dropdown-subPart text-color-gray"
+                >Relaxed</span
+              >
+              <span class="sidebar-menu-items dropdown-subPart text-color-gray"
+                >Bootcut</span
+              >
+              <span class="sidebar-menu-items dropdown-subPart text-color-gray"
+                >Straight</span
+              >
+            </li>
+            <li class="sidebar-menu-items text-color-gray">Jackets</li>
+            <li class="sidebar-menu-items text-color-gray">Zymwear</li>
+            <li class="sidebar-menu-items text-color-gray">Blazers</li>
+            <li class="sidebar-menu-items text-color-gray">Shoes</li>
+          </ul>
+        </div>
+
+        <!-- footer -->
+        <div class="sideBarFooter">
+          <ul style="list-style: none">
+            <li class="sidebar-footer-menus">Contract</li>
+            <li class="sidebar-footer-menus">NeswsLetter</li>
+            <li class="sidebar-footer-menus">Subscribe</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-bar">
+        <!-- MY CODE -->
+        <div class="container">
+          <!-- nav sidebar section -->
+          <div class="nav-hide-unhide button-style text-color-white">
+            <div>
+              <h3 class="logo-latter-spacing">LOGO</h3>
+            </div>
+
+            <div onclick="toggle()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <!--  nav sidebar section -->
+
+          <!-- START navbar -->
+          <section class="navbar">
+            <span class="nav-font-size grid">Jeans</span>
+            <div class="nav-menu">
+              <i
+                class="fa-solid fa-cart-plus nav-font-size nav-font-margin nav-font-margin-right"
+              ></i>
+              <i
+                class="fa-solid fa-magnifying-glass nav-font-size nav-font-margin"
+              ></i>
+            </div>
+          </section>
+          <!-- END navbar -->
+          <!-- START Image Section -->
+          <section>
+            <div class="image">
+              <div class="image-text-padding text-color-white">
+                <span
+                  class="image-font-size font-margin font-weight font-size-responsive"
+                  >New arrivals</span
+                >
+                <h3 class="font-margin font-weight hide">COLLECTION 2016</h3>
+                <button class="button-style text-color-white button-padding">
+                  SHOP NOW
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- END Image Section -->
+          <!-- START Item count section -->
+          <p class="count-text-margin">8 items</p>
+          <!-- END Item count section -->
+
+          <!-- START cart items -->
+          <section>
+            <div>
+              <div class="cart-column">
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+
+                <!-- duplicates -->
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+              </div>
+              <!-- 2nd row -->
+              <div class="cart-column">
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+                <div class="">
+                  <img
+                    src="https://www.w3schools.com/w3images/jeans1.jpg"
+                    alt="jeans1"
+                    class="cart-image-style"
+                  />
+                  <p class="count-text-margin text-color-gray">
+                    Ripped Skinny Jeans
+                    <b class="bolder">$24.99</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- END cart items -->
+          <!-- START subscriber section -->
+          <section class="">
+            <div
+              class="cart-padding subscribe-section button-style text-color-white"
+            >
+              <h3 class="font-weight font-margin sub-font-size">Subscribe</h3>
+              <p class="subs-padding-bottom">
+                To get special offers and VIP treatment:
+              </p>
+              <!-- <p> -->
+              <input
+                class="sub-input-box width"
+                type="text"
+                placeholder="Enter e-mail"
+              />
+              <!-- </p> -->
+              <button class="sub-button text-color-white">Subscribe</button>
+            </div>
+          </section>
+          <!-- END subscriber section -->
+
+          <!-- START Contact / About / Store -->
+
+          <section class="contact-section">
+            <!-- START Contact -->
+            <div class="contact-padding">
+              <h3 class="subs-padding-bottom">Contact</h3>
+              <p class="subs-padding-bottom">Questions? Go ahead.</p>
+              <div class="contact-input">
+                <input class="sub-input-box" type="text" placeholder="Name" />
+                <input class="sub-input-box" type="email" placeholder="Email" />
+                <input
+                  class="sub-input-box"
+                  type="text"
+                  placeholder="Subject"
+                />
+                <input
+                  class="sub-input-box"
+                  type="text"
+                  placeholder="Message"
+                />
+                <button class="button-style text-color-white button-padding">
+                  Send
+                </button>
+              </div>
+            </div>
+            <!-- END Contact -->
+            <!-- START About -->
+
+            <div class="about-section contact-padding">
+              <h3 class="subs-padding-bottom">About</h3>
+              <ul class="list-style-none">
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#"> About us</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">We're hiring</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">Support</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">Find store</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">Shipment</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">Payment</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">Gift card</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">Return</a>
+                </li>
+                <li class="subs-padding-bottom">
+                  <a class="text-color-gray" href="#">Help</a>
+                </li>
+              </ul>
+            </div>
+            <!-- END About -->
+
+            <!-- START Store -->
+            <div class="contact-padding">
+              <h3 class="subs-padding-bottom">Store</h3>
+              <ul class="list-style-none">
+                <li class="subs-padding-bottom">Company Name</li>
+                <li class="subs-padding-bottom">0044123123</li>
+                <li class="subs-padding-bottom">ex@mail.com</li>
+                <li class="subs-padding-bottom">We accept</li>
+                <li class="subs-padding-bottom">Amex</li>
+                <li class="subs-padding-bottom">Credit Card</li>
+              </ul>
+              <div class="footer-padding">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+            <!-- END Store -->
+          </section>
+          <!-- END Contact / About / Store -->
+          <!-- Footer -->
+          <footer
+            class="button-style text-color-white footer-padding text-align-center"
+          >
+            Powered by <a href="#" class="text-color-white"> Anish</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

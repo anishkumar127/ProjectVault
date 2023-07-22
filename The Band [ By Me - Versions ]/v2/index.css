@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu-padding {
+  padding: 12px 24px;
+}
+.nav-style {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.nav-style a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 24px;
+}
+/* .nav-menu li {
+} */
+.nav-style:hover {
+  background-color: gray;
+}
+/* .nav-menu li:hover {
+} */
+.search {
+  padding: 10px;
+  cursor: pointer;
+}
+.search:hover {
+  background-color: tomato;
+}
+
+/* more visible */
+
+.nav-hover-visible {
+  display: none;
+}
+
+.nav-visible:hover {
+  /* display: block; */
+  background-color: red;
+  /* height: 100px; */
+}
+
+.hamburger_visible {
+  display: none;
+}
+/* main section */
+
+.main_section {
+  /* max-width: 2000px;
+   */
+  max-width: 2560px;
+  padding-top: 44px;
+  /* margin-top: 46px; */
+}
+
+/* START COMMON */
+.text-color {
+  color: white;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.text-decoration {
+  text-transform: uppercase;
+}
+.date_button {
+  background-color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  width: 100px;
+}
+
+.band-letter-spacing {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+
+/* END COMMON */
+
+/* START SLIDER */
+
+.image_background_slider {
+  height: calc(100vh - 44px);
+  background: url("https://www.w3schools.com/w3images/chicago.jpg");
+  background-size: cover;
+}
+
+.image_background_content {
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  height: 100%;
+}
+
+/* END SLIDER */
+
+/* band description */
+.band {
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* e */
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.band_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.band_description {
+  width: 100%;
+}
+.band_description img {
+  width: 100%;
+  border-radius: 4px;
+
+  max-width: 170px;
+  height: 100%;
+}
+.text-wrap {
+  text-align: justify;
+}
+
+/* tour date */
+.date_color {
+  color: gray;
+}
+.tour_date {
+  background-color: black;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.tour_section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tour-item-border {
+  background-color: white;
+  margin-bottom: 20px;
+}
+.tour_intro {
+  padding-bottom: 20px;
+}
+.tour-item-border li {
+  list-style-type: none;
+  border: 1px solid rgba(195, 190, 190, 0.5);
+  padding: 8px;
+}
+
+.item-margin-right {
+  margin-left: 11px;
+}
+
+.item-margin-auto {
+  margin-right: auto;
+  width: 100%;
+}
+.sold_out_color {
+  background-color: tomato;
+  padding: 5px;
+}
+.remaining-radius {
+  background-color: black;
+  padding: 7px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.number_align {
+  display: flex;
+  justify-content: space-between;
+}
+.date_image_container {
+  display: flex;
+  gap: 12px;
+}
+.date_image_size {
+  width: 100%;
+  height: 250px;
+  /* max-width: 370px; */
+  /* object-fit: cover; */
+}
+.date-background-color {
+  background-color: white;
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+}
+.date_image_description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date_image_center {
+  display: flex;
+  flex-direction: column;
+}
+
+/* map */
+
+.map {
+  width: 100%;
+  filter: grayscale(50%);
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* contact */
+.contact-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.contact_container_align {
+  display: flex;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-text-align {
+  text-align: center;
+}
+
+.info-width-align {
+  width: 49.9%;
+}
+
+.input-padding {
+  padding: 10px;
+}
+
+.input_block {
+  width: 100%;
+}
+
+.about_align {
+  display: flex;
+  column-gap: 10px;
+}
+
+.contact_input_align {
+  display: flex;
+  column-gap: 10px;
+}
+.qwe {
+  display: flex;
+  gap: 10px;
+}
+.align-message {
+  width: 100%;
+}
+.contact-gap {
+  margin-bottom: 10px;
+}
+
+.button-align {
+  text-align: end;
+}
+.input {
+  width: 100%;
+}
+/* footer */
+
+footer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.footer-padding {
+  padding: 15px;
+}
+
+.font-size {
+  font-size: 24px;
+}
+
+.footer-font {
+  font-size: 15px;
+  color: black;
+}
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .nav-menu li a {
+    padding: 12px 8px;
+  }
+  .search {
+    padding: 12px;
+  }
+  .image_background_slider {
+    height: 50vh;
+  }
+  .image_background_content {
+    padding: 20px;
+  }
+  .text-wrap {
+    padding: 20px;
+  }
+
+  .date_image_size {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .tour_section {
+    padding: 0.01em 16px !important;
+  }
+  .contact_container_align {
+    padding: 0.01em 16px;
+  }
+  .band_description img {
+    max-width: 170px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .band_container {
+    flex-direction: column;
+  }
+  .date_image_container {
+    flex-direction: column;
+  }
+  .contact_container_align {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .about_align {
+    padding-bottom: 5px;
+  }
+
+  .search {
+    display: none;
+  }
+  .hamburger_visible {
+    display: block;
+    color: white;
+    padding: 12px 24px;
+  }
+  .main_section {
+    padding-top: 42px;
+  }
+
+  .image_background_content h3 {
+    display: none;
+  }
+  .image_background_content p {
+    display: none;
+  }
+  #ham1 {
+    padding: 15px;
+  }
+  /* nav bar hide unhide */
+
+  /* .mobile_mode {
+    display: none;
+  } */
+  .nav-style-visible {
+    display: block;
+  }
+  /* .nav-menu {
+    overflow: hidden;
+  } */
+  #hideMenu {
+    position: absolute;
+    height: 400px;
+    /* right: 0; */
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .hidden {
+    height: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .image_background_slider {
+    height: 50vh;
+  }
+}
+/* .ham2 {
+  display: none;
+} */

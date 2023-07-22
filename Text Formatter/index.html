@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assests/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <div class="flex justify-end dark:bg-green-500">
+      <img
+        id="dark"
+        class="h-9 hidden"
+        onclick="themeChange()"
+        src="./assests/images/moon.svg"
+      />
+
+      <img
+        id="light"
+        class="h-9"
+        src="./assests/images/sun.svg"
+        onclick="themeChange()"
+      />
+    </div>
+
+    <!-- TESTING -->
+
+    <div class="text-center">
+      <input
+        class="p-[50px] border-2 border-black"
+        onfocus="onGame()"
+        onfocusout="finishGame()"
+        id="extract_text"
+      />
+    </div>
+
+    <div class="text-center pt-[10px]">
+      <button
+        class="p-[10px] border-1 border-black bg-cyan-900 text-white rounded"
+        onclick="upper()"
+      >
+        UpperCase
+      </button>
+      <button
+        class="rounded-md py-2 px-4 border-black text-gray-100 bg-green-500 hover:bg-green-600 focus:outline-none"
+        onclick="lower()"
+      >
+        LowerCase
+      </button>
+      <button
+        class="p-2.5 border-1 border-black bg-cyan-900 text-white rounded"
+        onclick="word()"
+      >
+        word count
+      </button>
+      <button
+        class="p-2.5 border-1 border-black bg-cyan-900 text-white rounded"
+        onclick="character()"
+      >
+        Character Count
+      </button>
+      <button
+        class="p-2.5 border-1 border-black bg-cyan-900 text-white rounded"
+        onclick="clearBtn()"
+      >
+        Clear Text
+      </button>
+      <div id="text"></div>
+    </div>
+
+    <div id="text_display"></div>
+
+    <div class="py-2 bg-gray-600 h-48 flex justify-center items-center">
+      <img src="./assests/images/clock.png" class="w-28 relative" />
+      <div
+        id="seconds"
+        class="mb-[40px] ml-[0.5px] z-10 origin-bottom w-1 bg-red-600 h-10 transform rotate-[0deg] absolute"
+      ></div>
+      <div
+        id="hours"
+        class="mb-[40px] ml-[0.5px] z-8 origin-bottom w-1.5 bg-blue-600 h-10 transform rotate-[0deg] absolute"
+      ></div>
+      <div
+        id="minutes"
+        class="mb-[40px] ml-[0.5px] z-4 origin-bottom w-1.5 bg-green-600 h-10 transform rotate-[0deg] absolute"
+      ></div>
+    </div>
+
+    <div id="hey">hey</div>
+    <script src="./assests/js/index.js"></script>
+    <script src="./assests/js/clock.js"></script>
+  </body>
+</html>

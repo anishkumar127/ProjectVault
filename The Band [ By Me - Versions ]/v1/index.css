@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.container {
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: auto;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu li {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+}
+.nav-menu li:hover {
+  background-color: gray;
+}
+.search {
+  padding: 10px;
+  cursor: pointer;
+}
+.search:hover {
+  background-color: tomato;
+}
+
+/* START COMMON */
+.text-color {
+  color: white;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.text-decoration {
+  text-transform: uppercase;
+}
+.date_button {
+  background-color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+/* END COMMON */
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-hover-visible {
+  display: none;
+}
+
+.nav-menu li .nav-hover-visible:hover {
+  display: block;
+}
+
+/* START SLIDER */
+
+.image-background-slider {
+  color: white;
+  height: calc(100vh - 44px);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  background: url("https://www.w3schools.com/w3images/chicago.jpg");
+  background-size: cover;
+}
+
+/* END SLIDER */
+
+/* band description */
+.band {
+  padding: 50px;
+}
+.band_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.band_description img {
+  height: 150px;
+  width: 150px;
+}
+.text-wrap {
+  text-align: justify;
+}
+
+/* tour date */
+.date_color {
+  color: gray;
+}
+.tour_date {
+  background-color: black;
+  padding: 60px;
+}
+
+.tour-item-border {
+  background-color: white;
+  margin-bottom: 20px;
+}
+.tour_intro {
+  padding-bottom: 20px;
+}
+.tour-item-border li {
+  list-style-type: none;
+  border: 1px solid rgba(195, 190, 190, 0.5);
+  padding: 8px;
+}
+
+.item-margin-right {
+  margin-left: 11px;
+}
+
+.item-margin-auto {
+  margin-right: auto;
+  width: 100%;
+}
+.sold_out_color {
+  background-color: tomato;
+  padding: 5px;
+}
+.remaining-radius {
+  background-color: black;
+  padding: 7px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.number_align {
+  display: flex;
+  justify-content: space-between;
+}
+.date_image_container {
+  display: flex;
+  gap: 12px;
+}
+.date_image_size {
+  width: 100%;
+  height: 250px;
+  max-width: 370px;
+  object-fit: cover;
+}
+.date-background-color {
+  background-color: white;
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+}
+.date_image_description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date_image_center {
+  display: flex;
+  flex-direction: column;
+}
+
+/* map */
+
+.map {
+  width: 100%;
+}
+
+/* contact */
+.contact-container {
+  padding: 25px;
+}
+.contact_container_align {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.input-padding {
+  padding: 10px;
+}
+
+.input_block {
+  width: 100%;
+}
+
+.about_align {
+  display: flex;
+  column-gap: 10px;
+}
+
+.contact_input_align {
+  display: flex;
+  column-gap: 10px;
+}
+.align-message {
+  width: 100%;
+}
+.contact-gap {
+  margin-bottom: 10px;
+}
+
+.button-align {
+  text-align: end;
+}
+
+/* footer */
+
+footer {
+  padding: 60px;
+}
+
+.footer-padding {
+  padding: 15px;
+}
+
+.font-size {
+  font-size: 30px;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width:768px) {
+    .contact_container_align {
+        justify-content: space-between;
+        padding: 0;
+    }
+}

@@ -1,0 +1,343 @@
+/* Universal Css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;   
+}
+/* Commen Css */
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin:auto;
+    
+}
+.Band-container{
+    max-width: 800px;
+    margin: auto;
+    
+}
+.style-none{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.slider{
+    width: 100%;
+ 
+}
+/*css main  */
+
+.style-none>li{
+    display: inline;
+    padding:10px;
+}
+.navbar{
+    background-color: black;
+    color:white;
+    padding:15px;   
+    position: fixed;
+    width: 100%;
+}
+.full_width_image{
+    background-size: cover;
+    display: flex;
+    
+}
+.imageHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    /* height: 100%; */
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+}
+.image{
+ width: 100%;
+ background-image: url("https://www.w3schools.com/w3images/chicago.jpg");
+ background-repeat: no-repeat;
+ height: calc(100vh - 57px);
+ background-origin: content-box;
+ background-position: bottom;
+
+
+}
+/* .full_width_image{
+background-color: black;
+} */
+.slider{
+    padding-top:50px;
+}
+.heading{
+    text-align:center;   
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Barlow', sans-serif;
+}
+.subheading{
+    text-align: center;
+    padding: 5px;
+    font-size:15px;
+    font-family: 'Barlow', sans-serif;
+    color: gray;
+}
+.content{
+    padding: 10px;
+    font-family: 'Barlow', sans-serif;
+}
+.product{
+    display: flex;
+    gap:10px;   
+    justify-content: space-evenly;
+    padding:40px;
+    text-align: center;
+   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+}
+.product-image{
+    max-width: 150px;
+    width: 100%;
+    padding: 6px;
+}
+.product_name{
+    font-size:20px;
+}
+.tour{
+        display: flex;
+        /* white-space: nowrap; */
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        padding: 20px;
+        }
+
+.MonthWiseDataShow{
+   
+     background-color: white;
+    color:black;
+    max-width: 800px;
+    width: 100%;
+    
+        
+}
+.data{
+    border: 1px solid black;
+    padding:10px;
+}
+.MonthWiseDataShow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.MonthName{
+  
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+.TicketStatus{
+    background-color: #f44336;
+    padding:5px;
+}
+.leftItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftItem>.TicketStatus{
+    border-radius: 10px;
+     color:white;
+     background-color: black;
+    }
+    .productsThree{
+       display: flex;
+        padding-top:20px;
+        max-width: 800px;
+        gap:10px;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 40px;
+
+    
+        
+    }
+    .productsItem{
+        background-color: white;
+        max-width: 250px;
+          
+    }
+    .productsItem_image_Img{
+        max-width: 100%;
+    }
+    .productsItem_decription{
+        color:black;
+       }
+    .productItemSubHeading{
+        font-family: 'Barlow', sans-serif;   
+        color:black;   
+    }
+    .product-contect{
+       padding:10px;
+    }
+    .productsItem_button{
+        padding:10px;
+        background-color: rgb(0, 0, 0);
+        outline: none;
+        border:none;
+        margin-top: 10px;
+        color:white;
+    }
+.productheading{
+    margin-bottom: 10px;
+}
+.productItemSubHeading{
+    margin-bottom: 10px;   
+}
+
+.cnt{
+    display: flex;
+    justify-content: space-between;
+    padding:30px 20px 30px 20px ;
+    
+    flex-wrap: wrap;
+}
+.contectinfo{
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+}
+.contectInfoInputForm>.inputbox{
+padding:10px;
+margin-bottom: 10px;
+}
+.ContectBigINputBoxForm{
+ width: 100%;
+}
+.ContectBigINputBoxForm>.inputbox{
+   width: 100%;   
+   padding:10px;
+   margin-bottom: 10px;
+}
+.ContectFormSubmitForm{
+    display: flex;
+    justify-content: end;
+}
+.ContectFormSubmitForm>.submitButton{
+padding: 10px;
+background-color: black;
+color: white;
+border: none;
+}
+
+.theme>image{
+    background-repeat: no-repeat;
+}
+.footer{
+    text-align: center;
+    height: 30vh;
+    padding-top:5px;
+    font-family: 'Barlow', sans-serif;
+    padding:60px;
+}
+.footerCOntent{
+    font-size: 15px;
+    align-items: center;
+}
+.TourPackageheadingFirst{
+    color: white;
+}
+.full_width_image>img{
+    width: 100%;
+}
+.slider_container{
+    padding-top:57px;
+}
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    /* z-index: 1; */
+}
+/* .Dropdown{
+    position: relative;
+    display: inline-block;
+}
+.Dropdown:hover .dropdownContent {
+    display: block;
+  } */
+  .themeImage{
+    width: 100%;
+  }
+  .imageHeading{
+    color:white;
+  }
+  .fa-brands{
+   font-size: 2rem;
+/*  background-color: gray; */
+color: grey;
+
+}
+/* media queary for responsive */
+@media screen and (max-width:426px) {
+    .product{
+     flex-direction: column;   
+    }
+    .product-image{
+        max-width: 100%;
+    }
+    .productsThree{
+        flex-direction: column;
+    }
+    .productsItem{
+        margin: auto;
+        max-width: 100%;
+    }
+    .form{
+        width: 100%;
+        padding-top: 23px;
+    }
+    .inputbox{
+        width: 100%;
+    }
+  .menubar{
+    display: inline-block !important;
+
+  }
+  /* .navbarmenue{
+    display: block;
+  } */
+  .mobile {
+    display: block;
+  }
+
+  #onHide{
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    overflow: hidden;
+    height: 400px;
+  }
+  .hidden{
+    height: 0 !important;
+  }
+}
+.menubar{
+    display: none;
+}
+.MenubarLine{
+    background-color: white;
+    margin-top: 5px;
+    width: 30px;
+    height: 4px;
+}

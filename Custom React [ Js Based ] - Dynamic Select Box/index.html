@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="" id="text_number" />
+
+    <button onclick="getNumber()">Submit</button>
+
+    <p>CREATE SELECT BUTTON & DISPLAY SELECTED VALUE</p>
+
+    <button id="btn" onclick="selectBtn()" class="hidden">Generate</button>
+
+    <div id="default_stage"></div>
+    <script>
+      // GENERATOR
+      const btn = document.getElementById("btn");
+      const selectBox = document.createElement("div");
+      btn.parentNode.insertBefore(selectBox, btn.nextSibling);
+      selectBox.setAttribute("id", "root");
+
+      // BUTTON DISABLE
+      btn.setAttribute("disabled", "true");
+
+      //   ====================
+      const text_number = document.getElementById("text_number");
+      let numbers = 0;
+      let arr = [];
+      function getNumber() {
+        numbers = text_number.value;
+        for (let i = 0; i < numbers; i++) {
+          const inputBtn = document.createElement("input");
+          inputBtn.setAttribute("type", "text");
+          inputBtn.setAttribute("placeholder", "enter value");
+          inputBtn.setAttribute("id", `input_text_${i}`);
+          btn.parentNode.insertBefore(inputBtn, btn.nextSibling);
+        }
+        btn.removeAttribute("disabled");
+      }
+      // ===============
+      function selectBtn() {
+        const root = document.getElementById("root");
+        const select = document.createElement("select");
+        select.setAttribute("id", "selector");
+        root.appendChild(select);
+        let input_text = "";
+        for (let i = 0; i < numbers; i++) {
+          input_text = document.getElementById(`input_text_${i}`);
+          input_text.style.display = "none";
+          arr.unshift(input_text.value);
+        }
+
+        console.log(arr);
+
+        for (let i = 0; i < arr.length; i++) {
+          const text = arr[i];
+          const option = document.createElement("option");
+          const textValue = document.createTextNode(text);
+          option.appendChild(textValue);
+          select.appendChild(option);
+        }
+
+        //   GET VALUE
+        const ul = document.createElement("ul");
+        const li = document.createElement("li");
+        ul.appendChild(li);
+
+        let val = "";
+        const selectValue = document.getElementById("selector");
+        selectValue.addEventListener("change", function () {
+          val = selectValue.value;
+          li.innerHTML = "CURRENT STAGE => " + val;
+
+          //  SET LOCAL STORAGE
+          localStorage.setItem("country", val);
+        });
+
+        // UL DIV DISPLAY
+        const ul_display = document.createElement("div");
+        root.parentNode.insertBefore(ul_display, root.nextSibling);
+        ul_display.setAttribute("id", "ul_view");
+        const ul_view = document.getElementById("ul_view");
+        ul_view.appendChild(ul);
+
+        // GET LOCAL STORAGE FIRST STAGE DATA
+        const storageItemView = document.createElement("div");
+        storageItemView.setAttribute("id", "storage_view");
+        ul_view.appendChild(storageItemView);
+
+        const StorageGet = localStorage.getItem("country");
+        storageItemView.innerHTML = StorageGet;
+        btn.setAttribute("disabled", "true");
+      }
+
+      //   DEFAULT LAST STAGE DATA
+      const default_stage = document.querySelector("#default_stage");
+      const StorageGet = localStorage.getItem("country");
+      default_stage.innerHTML = "LAST STAGE => " + StorageGet;
+    </script>
+  </body>
+</html>

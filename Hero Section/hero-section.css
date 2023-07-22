@@ -1,0 +1,25 @@
+
+body{
+    background-image: url('./hero-image.jpg');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: grid;
+      place-items: center;      
+
+    height: 100vh;
+}
+.div{
+    padding: 10px;
+}
+
+.div > button{
+    background-color: RGB(170 187 204);
+    padding:10px;
+}

@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
+
+.div1 {
+  background-color: cadetblue;
+  height: 100px;
+  width: 100px;
+}
+
+.animation:hover {
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+/* .div1:hover {
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+} */
+.div2 {
+  background-color: darksalmon;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes circle {
+  0% {
+    left: 0px;
+    top: 0px;
+    transform: rotate(360deg);
+  }
+  25% {
+    left: 0px;
+    top: 300px;
+    background-color: aquamarine;
+  }
+  50% {
+    left: 400px;
+    top: 300px;
+    background-color: coral;
+  }
+  75% {
+    left: 400px;
+    top: 0px;
+    background-color: cornflowerblue;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}

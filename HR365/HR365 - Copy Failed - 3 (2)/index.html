@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assest/css/index.css" />
+    <link rel="stylesheet" href="./assest/css/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,300&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper js module link css   -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- home page css -->
+    <link rel="stylesheet" href="./assest/css/home.css" />
+    <!-- footer css -->
+    <link rel="stylesheet" href="/assest/css/footer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- START navbar  -->
+    <section class="width">
+      <nav class="nav-padding">
+        <div class="nav-section">
+          <div>
+            <img
+              class="image-width nav-font-size"
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/hr365-logo-210x70_iupOwUOlS"
+            />
+          </div>
+          <div class="nav-list-visible">
+            <ul class="list-style-type nav-menu nav-font-size">
+              <li onclick="showItem()" class="on-hover-show">
+                <a
+                  class="text-decoration text-color-black nav-bar-hover-color"
+                  href="#"
+                  >Product
+                </a>
+                <i class="fa-solid fa-angle-down nav-bar-hover-color"></i>
+                <!-- hover visible item -->
+                <div id="onShow" class="hidden box-shadow">
+                  <div class="hover-visible">
+                    <ul class="list-style-type hover-item-align">
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt=""
+                        /></span>
+                        Employee Directory
+                      </li>
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt="" /></span
+                        >Time Off Manager
+                      </li>
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt=""
+                        /></span>
+                        Employee On - boarding
+                      </li>
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt=""
+                        /></span>
+                        Contract Management 365
+                      </li>
+                      <li>
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt="" /></span
+                        >Performance Management
+                      </li>
+                    </ul>
+                    <ul class="list-style-type hover-item-align">
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt="" /></span
+                        >Asset Management
+                      </li>
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt="" /></span
+                        >Helpdesk 365
+                      </li>
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt="" /></span
+                        >Timesheet
+                      </li>
+                      <li class="hover-item-padding">
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt="" /></span
+                        >Expense Tracker
+                      </li>
+                      <li>
+                        <span class="image-vertical-align"
+                          ><img
+                            src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Product_page_s_Logos/Employee-Directory-menu-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658128611197"
+                            alt="" /></span
+                        >Custom Applications
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  class="text-decoration text-color-black nav-bar-hover-color"
+                  href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration text-color-black nav-bar-hover-color"
+                  href="#"
+                  >Development</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration text-color-black nav-bar-hover-color"
+                  href="#"
+                  >Partners</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration text-color-black nav-bar-hover-color"
+                  href="#"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration text-color-black nav-bar-hover-color"
+                  href="#"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <button class="button-style text-color-white">
+                  <a
+                    href="./assest//html/HR365.html"
+                    class="text-decoration text-color-white"
+                  >
+                    Book a Demo</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- hamburger -->
+          <span class="hamburger-visible" onclick="showMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+        <!-- ham nav bar inside -->
+        <div class="ham-navbar" id="menuShow">
+          <span class="nav-display-block">
+            <div class="cross-button">
+              <i class="fa-solid fa-square-xmark cross-button-img"></i>
+            </div>
+            <ul class="list-style-type ham-nav-hover-padding">
+              <li onclick="showNavInside()" class="nav-display-margin-bottom">
+                <a class="text-decoration text-color-black" href="#">Product</a>
+                <i class="fa-solid fa-angle-down nav-bar-hover-color"></i>
+                <!-- ul -->
+                <div
+                  id="on-nav-inside-visible"
+                  class="ham-inside-nav-visibility-hidden"
+                >
+                  <ul
+                    class="list-style-type ham-nav-inside-nav-bg-color ham-nav-hover-padding"
+                  >
+                    <li class="ham-nav-inside-nav-pb" style="padding-top: 10px">
+                      Employee Directory
+                    </li>
+                    <li class="ham-nav-inside-nav-pb">Time Off Manager</li>
+                    <li class="ham-nav-inside-nav-pb">
+                      Employee On - boarding
+                    </li>
+                    <li class="ham-nav-inside-nav-pb">
+                      Contract Management 365
+                    </li>
+                    <li>Performance Management</li>
+                  </ul>
+                  <ul
+                    class="list-style-type ham-nav-inside-nav-bg-color ham-nav-hover-padding"
+                  >
+                    <li class="ham-nav-inside-nav-pb">Asset Management</li>
+                    <li class="ham-nav-inside-nav-pb">Helpdesk 365</li>
+                    <li class="ham-nav-inside-nav-pb">Timesheet</li>
+                    <li class="ham-nav-inside-nav-pb">Expense Tracker</li>
+                    <li class="ham-nav-inside-nav-pb">Custom Applications</li>
+                  </ul>
+                </div>
+                <!-- ul end -->
+              </li>
+              <li class="nav-display-margin-bottom">
+                <a class="text-decoration text-color-black" href="#">Pricing</a>
+              </li>
+              <li class="nav-display-margin-bottom">
+                <a class="text-decoration text-color-black" href="#"
+                  >Development</a
+                >
+              </li>
+              <li class="nav-display-margin-bottom">
+                <a class="text-decoration text-color-black" href="#"
+                  >Partners</a
+                >
+              </li>
+              <li class="nav-display-margin-bottom">
+                <a class="text-decoration text-color-black" href="#">Support</a>
+              </li>
+              <li>
+                <a class="text-decoration text-color-black" href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </span>
+        </div>
+      </nav>
+    </section>
+    <!-- END navbar  -->
+    <!-- main session -->
+    <div class="container">
+      <!-- H E R O - S E C T I O N -->
+      <div class="HeroSession">
+        <div class="session-left-logo-and-swiper">
+          <div class="session-left-content-swiperMain ">
+            <!-- 
+              ########################
+              #########Swiper#########
+              ########################
+               -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="session-left-content-Image">
+            <img src="assest/images/textRightSideImage.png" alt="logo-image " />
+          </div>
+          <div class="session-left-content">
+            <span class="Home-session-left-bottom-text"
+              >June 12-16, 2023 Washington, D.C.</span
+            >
+            <span class="Home-session-left-bottom-text-blue"
+              >Platinum Sponsor - HR365</span
+            >
+          </div>
+        </div>
+        <div class="session-right-content-Image">
+          <div class="image-background">
+            <img src="/assest/images/homemainimage.png" />
+          </div>
+        </div>
+      </div>
+      <div class="hedding-Bottom-Home">
+        <h2 class="hedding-Bottom-Home-Text"></h2>
+          Our products are trusted by leaders at
+        </h2>
+      </div>
+      <!-- <div class="swipersliderbottom"> -->
+      <!-- swiper slider -->
+      <!-- Swiper -->
+      <div class="swiper mySwiper fullSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/ComunidadPartners.png?updatedAt=1636520176830"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/CatoInstitute.png?updatedAt=1636520642321"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/Teleperformance.png?updatedAt=1636520903507"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/SIEMENS.png?updatedAt=1636522391358"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="	https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/nha.png?updatedAt=1636522404663"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="	https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/CricketAustralia.png?updatedAt=1636521786605"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="	https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/Raffles.png?updatedAt=1636522416949"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="	https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/MarinersChurch.png?updatedAt=1636521820050"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="		https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/BancoDoBrasil.png?updatedAt=1636521775543"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="	https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/msx.png?updatedAt=1636521832390"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="	https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/HarrodsAVIATION.png?updatedAt=1636521810330"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="	https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/StateOfGeorgia.png?updatedAt=1636522112224"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="		https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/UCI.png?updatedAt=1636522043547"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="		https://ik.imagekit.io/zn4au2jftpm5/hr365/ClientLogos/ZEROMotercycles.png?updatedAt=1636522053879"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="main-heading-cart-session">
+      <span class="main-heading-cart-session-text"
+        >Microsoft Teams, Power Apps & SharePoint Apps</span
+      >
+    </div>
+    <!-- START CART SECTION -->
+    <section class="cart-section">
+      <div class="cart-section-align">
+        <!-- cart 1 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/employee-directory.png?updatedAt=1627030486468"
+              alt=""
+            />
+          </div>
+          <h3>Employee Directory 365</h3>
+          <p class="cart-font-style">
+            Employee Directory which is a part of SharePoint human resources
+            management system, displays employee information ….
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+        <!-- cart 2 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/helpdesk.png?updatedAt=1627030488862"
+              alt=""
+            />
+          </div>
+          <h3>Helpdesk 365</h3>
+          <p class="cart-font-style">
+            Office 365 Help Desk is simple & customizable central part of our
+            SharePoint human resources management…
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+        <!-- cart 3 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/asset-management.png?updatedAt=1627030484967"
+              alt=""
+            />
+          </div>
+          <h3>Asset Management 365</h3>
+          <p class="cart-font-style">
+            HR365 SharePoint Office 365 Asset Management application is highly
+            configurable and easily customizable to…
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+
+        <!-- cart 4 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Timeoffmanager.png?updatedAt=1627030490525"
+              alt=""
+            />
+          </div>
+          <h3>Time-Off Manager 365</h3>
+          <p class="cart-font-style">
+            Office 365 time-off manager solution is an integral part of our
+            SharePoint human resources management system …
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+
+        <!--  cart 5 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/timesheet_qns.png?updatedAt=1627030491307"
+              alt=""
+            />
+          </div>
+          <h3>Timesheet 365</h3>
+          <p class="cart-font-style">
+            Timesheet is office 365 timesheet app that is powerful, yet easy to
+            use with functions like time sheets, daily ….
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+
+        <!-- cart 6 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Expense-Reimbursement.png?updatedAt=1627030488100"
+              alt=""
+            />
+          </div>
+          <h3>Expense Tracker 365</h3>
+          <p class="cart-font-style">
+            Save time managing your expenses with our easy to use HR365 expense
+            reimbursement solution. Managing expenses..
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+        <!-- cart 7 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/employee-onboarding.png?updatedAt=1627030487275"
+              alt=""
+            />
+          </div>
+          <h3>Employee On-boarding 365</h3>
+          <p class="cart-font-style">
+            HR365 On-boarding experience leads to pleasure experience for new
+            joinee as well as no burden on HR team. With the help …
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+        <!-- cart 8 -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/random-images/Contract_Management_Logo_9696_eWmOTlyk5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675954240303"
+              alt=""
+            />
+          </div>
+          <h3>Contract Management 365</h3>
+          <p class="cart-font-style">
+            Address legal teams need for a contract management from requests,
+            reviews, and approvals through obligation management and renewals.
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+        <!-- cart 9  -->
+        <div class="cart-style">
+          <div class="text-align-center">
+            <img
+              src="https://ik.imagekit.io/zn4au2jftpm5/hr365/custom-application.png?updatedAt=1627030485680"
+              alt=""
+            />
+          </div>
+          <h3>Custom Applications</h3>
+          <p class="cart-font-style">
+            Office 365 Custom Applications is simple & customizable central part
+            of our SharePoint human resources management…
+          </p>
+          <button class="cart-button-style">View more</button>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+
+      <footer>
+        <div class="footer-flex-session">
+          <div class="decription">
+            <span class="footer-session-heading">GET THE APP</span>
+            <span>SharePoint App is now</span>
+            <span>available on Google Play</span>
+            <span>& App Store. Get it now.</span>
+            <div class="image-logo-footer">
+              <img
+                class="footer-logo"
+                src="https://ik.imagekit.io/zn4au2jftpm5/hr365/AppStoreLogo_oNuHJYNYTh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668066329453"
+                alt="logo google"
+              />
+            </div>
+            <div class="image-logo-footer">
+              <img
+                class="footer-logo"
+                src="https://ik.imagekit.io/zn4au2jftpm5/hr365/GooglePlayStore_s4k3tJ12a.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668066329757"
+                alt="logo google"
+              />
+            </div>
+          </div>
+          <div class="footer-session-heading" class="footer-session">
+            <span>INFORMATION</span>
+            <ul>
+              <li>About Us</li>
+              <li>Partners</li>
+              <li>Development</li>
+              <li>Careers</li>
+              <li>Contact Us</li>
+              <li>EULA</li>
+            </ul>
+          </div>
+          <div class="footer-session">
+            <span class="footer-session-heading">HR365 APPLICATIONS</span>
+            <ul>
+              <li>Employee Directory 365</li>
+              <li>Time Off Manager 365</li>
+              <li>Employee On – boarding 365</li>
+              <li>Contract Management 365</li>
+              <li>Performance Management 365</li>
+            </ul>
+          </div>
+          <div class="footer-session">
+            <span class="footer-session-heading">BUSINESS APPLICATIONS</span>
+            <ul>
+              <li>Home</li>
+              <li>Integration</li>
+              <li>Features</li>
+              <li>Plans</li>
+              <li>Clients</li>
+            </ul>
+          </div>
+          <div class="footer-session">
+            <span class="footer-session-heading">CONTACT US</span>
+            <ul>
+              <li class="overflowtext-footerSection">
+                USA 201 S Lakeline Blvd, Suite#201 Cedar Park, TX 78613
+              </li>
+              <li class="overflowtext-footerSection">
+                CANADA 325 Front St W, #300 Toronto, Canada ON M5V 2Y1
+              </li>
+              <li class="overflowtext-footerSection">
+                INDIA 284/8, Garebhavi Palya,Hosur Rd, Nr Sai Temple Bangalore
+                560068
+              </li>
+            </ul>
+          </div>
+          <div class="footer-session">
+            <div class="footer-session-image">
+              <img
+                class="footer-logo"
+                src="https://ik.imagekit.io/zn4au2jftpm5/hr365/SPFxEDP/hr365_600X200.png?updatedAt=1632820522772"
+              />
+            </div>
+            <div class="footer-session-image">
+              <img
+                class="footer-logo"
+                src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Footer_Images/silicon-logo?ik-sdk-version=javascript-1.4.3&updatedAt=1658345216082"
+                alt=""
+              />
+            </div>
+            <div class="footer-session-image">
+              <img
+                class="footer-logo"
+                src="https://ik.imagekit.io/zn4au2jftpm5/hr365/Footer_Images/microsoft-gold-partner?ik-sdk-version=javascript-1.4.3&updatedAt=1658409176805"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="footer-session"></div>
+        </div>
+        <div></div>
+      </footer>
+      <!-- footer end -->
+    </section>
+    <!-- END CART SECTION -->
+    <script src="./assest/js/index.js"></script>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assest/js/swiper.js"></script>
+  </body>
+</html>

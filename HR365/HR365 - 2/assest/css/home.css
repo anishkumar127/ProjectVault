@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.HeroSession {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin: auto;
+  max-height: 40vh;
+  height: 100%;
+  width: 100%; */
+}
+
+.session-right-content-Image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.session-left-content-swiperMain {
+  font-weight: bold;
+}
+.session-left-content {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* .session-right-content-Image {
+     max-height:30vh;
+  } */
+.session-left-content {
+  font-size: 1rem;
+  padding: 12px 0;
+}
+.image-background > img {
+  /* height:346px; */
+  max-width: 556px;
+  width: 100%;
+}
+.session-left-content-Image > img {
+  max-width: 268px;
+  width: 100%;
+}
+.session-left-logo-and-swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.Home-session-left-bottom-text {
+  display: block;
+  padding: 5px 0px;
+  font-size: 2vw;
+}
+.Home-session-left-bottom-text-blue {
+  font-size: 2vw;
+  color: #5637da;
+}
+@media only screen and (max-width: 768px) {
+  .HeroSession {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 125px; */
+  }
+}
+/* hedding bottom of home  */
+.hedding-Bottom-Home {
+  text-align: center;
+  padding: 25px;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #5637da;
+}
+
+.main-heading-cart-session-text {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+  color: #5637da;
+}
+.main-heading-cart-session {
+  text-align: center;
+  padding: 10px;
+}

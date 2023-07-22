@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .input_checkbox {
+        display: none;
+      }
+      .checkbox_animation {
+        animation: check 2s linear 1;
+      }
+      .label_checkbox {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: darkcyan;
+      }
+
+      @keyframes check {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .input_checkbox:checked + .label_checkbox {
+        background-color: indigo;
+        transition: 2s;
+        transform: scale(1);
+      }
+
+      /* Radio */
+      .input_radio {
+        margin-top: 20px;
+
+        display: none;
+      }
+      .label_radio {
+        margin-top: 20px;
+
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: red;
+        position: relative;
+      }
+      .span {
+        display: none;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+        border-radius: 10px;
+      }
+      .circle_visible {
+        display: block;
+        /* transition: 5s; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="check">
+      <input type="checkbox" id="id_check" class="input_checkbox" />
+      <label
+        for="id_check"
+        onclick="onShow()"
+        id="checkbox"
+        class="label_checkbox"
+      ></label>
+    </div>
+
+    <div class="radio">
+      <input type="radio" class="input_radio" id="id_radio" />
+      <label for="id_radio" onclick="circle_show()" class="label_radio"
+        ><span id="circle_show" class="span"></span
+      ></label>
+    </div>
+    <script>
+      function onShow() {
+        const checkbox = document.getElementById("checkbox");
+        checkbox.classList.toggle("checkbox_animation");
+      }
+
+      function circle_show() {
+        const circle = document.getElementById("circle_show");
+        circle.classList.toggle("circle_visible");
+      }
+    </script>
+  </body>
+</html>

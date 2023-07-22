@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.table-container, table, td{
+    border:1px solid black;
+    padding:30px;
+   
+    /* border-collapse: collapse; */
+}
+
+/* .table-body{
+    border:1px solid black;
+} */
+
+/* .table-body{
+    background-color: red;
+} */
+
+
+
+.t1 , td{
+    border:1px solid black;
+    padding:30px;
+}

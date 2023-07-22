@@ -1,0 +1,250 @@
+$text-align: center;
+$color: white;
+$common-color: #6e083d;
+.heading-text-align {
+  text-align: $text-align;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "WF-Segoe-UI-Semilight", "Segoe UI Semilight",
+    "Segoe WP Semilight", Tahoma, Arial, Sans-Serif;
+}
+body {
+  color: #333333;
+  background-color: #f4f4f4;
+}
+.container {
+  background-color: #ffffff;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.demo-box-shadow {
+  filter: drop-shadow(0px 6px 6px rgba(182, 182, 182, 0.5));
+  background-color: $color;
+  padding: 20px;
+}
+
+.text-align-end {
+  $text-align: end;
+  text-align: $text-align;
+}
+
+.demo-section {
+  justify-content: center;
+  padding: 20px 136px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.demo-section {
+  .display-flex {
+    justify-content: space-between;
+  }
+}
+
+// Booking Button
+
+.button-booking-style {
+  background-color: #f8f8f8;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 16.41px;
+  margin: 50px auto 0;
+  padding: 8px 30px;
+  border-radius: 32px;
+}
+.text-weight {
+  font-weight: bold;
+}
+
+.button-common-color {
+  color: $common-color;
+}
+
+.calender-date {
+  display: flex;
+  justify-content: space-around;
+}
+
+.global-section {
+  margin: 24px 28px 0;
+  text-align: center;
+  padding: 0 0 32px 0;
+}
+
+// form style
+
+.form-style {
+  display: grid;
+  .input-box-style {
+    padding: 12px;
+    // background: none transparent;
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  // label {
+  //   font-weight: bold;
+  //   padding: 4px;
+  // }
+}
+
+.button-book {
+  // padding: 15px;
+  // max-width: 170px;
+  // width: 100%;
+  background-color: $common-color;
+  color: white;
+  border: none;
+  // border-radius: 8px;
+
+  margin: 20px 0 0;
+  min-width: 240px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+footer {
+  color: #605e5c;
+  background-color: #f8f8f8;
+  padding: 24px 28px;
+}
+
+//  REPEATED CSS
+.form-margin {
+  margin: 12px 155px;
+}
+
+.date-section-padding {
+  padding: 5px 155px 55px;
+}
+
+.heading-date-margin {
+  margin: 6px 20px 36px;
+}
+
+.form-margin-top {
+  margin-top: 10px;
+}
+
+.date-margin-top {
+  margin-top: 25px;
+}
+
+.demo-text-overflow {
+  white-space: nowrap;
+  // width: 100%;
+  width: 78%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// hover:hover{
+
+// }
+.demo-border {
+  border-top: 4px solid #6e083d;
+  border-left: 1px solid #6e083d;
+  border-right: 1px solid #6e083d;
+  border-bottom: 1px solid #6e083d;
+  border-radius: 4px;
+  max-width: 436px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-decoration {
+  text-decoration: none;
+}
+
+.heading-padding {
+  padding: 30px;
+}
+
+.icon-padding-top-bottom {
+  padding: 12px 12px;
+}
+
+.time-style {
+  padding: 5px;
+  border: none;
+  word-spacing: 2px;
+}
+.calendar-style {
+  padding: 4px;
+  border: none;
+}
+
+.footer-bottom-padding {
+  padding-bottom: 20px;
+}
+// Responsive
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 420px;
+  }
+  .demo-section {
+    padding: 30px;
+  }
+  .calender-date {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .date-section-padding {
+    padding: 0px 30px;
+  }
+  .form-margin {
+    margin: 22px;
+  }
+  .form-icon-text-align {
+    text-align: center;
+  }
+  .display-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .global-section {
+    margin: 24px 0px 0;
+  }
+}
+
+.label-style {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+    "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 600 !important;
+  color: rgb(50, 49, 48);
+  box-sizing: border-box;
+  box-shadow: none;
+  margin: 0px;
+  display: block;
+  padding: 5px 0px !important;
+  overflow-wrap: break-word;
+}
+
+.read-me-more {
+  background: none;
+  border: none;
+  min-height: 14px;
+  margin: 0 3px;
+  padding: 0;
+  line-height: 12px;
+  font-size: 12px;
+}

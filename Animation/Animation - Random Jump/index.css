@@ -1,0 +1,32 @@
+.jumper{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    /* margin: 100% auto 100% auto; */
+ top: 0;
+        left: 0;
+}
+
+.jumping{
+    width: 100px;
+    height: 100px;
+    background-color:brown;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+       
+        transition: 10s;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+
+
